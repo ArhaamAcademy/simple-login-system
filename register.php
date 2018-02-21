@@ -54,49 +54,54 @@ if(isset($_POST['form_login'])){
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <title>Simple Login System :: PHP</title>
         <link href="style.css" rel="stylesheet">
     </head>
+
     <body>
-        <div class="form_message">
-            <?php 
+        <div class="main_content">
+            <div class="form_message">
+                <?php 
 
-		if(isset($error_message)){
-		echo "<div class=' text-danger message message_warning'>".$error_message."</div>";
+                    if(isset($error_message)){
+                    echo "<div class=' text-danger message message_warning'>".$error_message."</div>";
 
-		}
+                    }
 
-		if(isset($success_message)){
-		echo "<div class='text-success message message_success'>".$success_message."</div>";
-		}
+                    if(isset($success_message)){
+                    echo "<div class='text-success message message_success'>".$success_message."</div>";
+                    }
 
-	    ?>
-        </div>
-        <div class="login_form">
-            <form action="" method="post">
-		<h4>Name :</h4>
-		<input type="text" class="form-control" name="name" placeholder="Name"/>
-		<h4>Usernam :</h4>
-		<input type="text" class="form-control" name="username" placeholder="Username"/>
-		<h4>Password : </h4>
-		<input type="password" class="form-control" name="password" placeholder="Password"/>
-		<h4>Email :</h4>
-		<input type="text" class="form-control" name="user_email" placeholder="Email"/>
-		<h4>Contact :</h4>
-		<input type="text" class="form-control" name="user_phone" placeholder="Phone Number Optional"/>
-		<h4>User Type :</h4>
-		<select class="form-control" name="user_type">
-		<option value="1">Admin</option>
-		<option value="2">User</option>
-		</select>
-		<br/>
-		<input type="submit" class="btn btn-success" value="Register" name="form_login"/>
-		<a href="login.php">Back to login Page</a>
-	    </form>
+                ?>
+            </div>
+            <div class="login_form">
+                <form action="" method="post">
+                    <h3>Name :</h3>
+                    <input type="text" class="" name="name" placeholder="Name" />
+                    <h3>Usernam :</h3>
+                    <input type="text" class="" name="username" placeholder="Username" />
+                    <h3>Password : </h3>
+                    <input type="password" class="" name="password" placeholder="Password" />
+                    <h3>Email :</h3>
+                    <input type="text" class="" name="user_email" placeholder="Email" />
+                    <h3>Contact :</h3>
+                    <input type="text" class="" name="user_phone" placeholder="Phone Number Optional" />
+                    <h3>User Type :</h3>
+                    <select class="login_select" name="user_type">
+                        <option value="1">Admin</option>
+                        <option value="2">User</option>
+                    </select>
+                    <br/>
+                    <input type="submit" class="btn btn-success" value="Register" name="form_login" />
+                    <a href="login.php">Back to login Page</a>
+                </form>
+            </div>
         </div>
     </body>
-</html>
+
+    </html>
