@@ -1,5 +1,4 @@
-
-				<?php
+<?php
 session_start();
 include_once('config.php');
 if(isset($_POST['form_login'])){
@@ -40,29 +39,34 @@ if(isset($_POST['form_login'])){
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <title>Simple Login System :: PHP</title>
-	<link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
+
     <body>
-        <div class="form_message">
-            <?php
+        <div class="main_content">
+            <div class="form_message">
+                <?php
                 if(isset($error_message)){echo "<div>".$error_message."</div>";}
             ?>
-        </div>
-        <div class="login_form">
-            <form action="" method="post">
-                <h3>Username :</h3>
-                <input type="text" class="form-control" name="username" placeholder="Username" />
-                <h3>Password : </h3>
-                <input type="password" class="form-control" name="password" placeholder="Password" />
-                <br/>
-                <input type="submit" class="btn btn-success" value="Login" name="form_login" />
-                <a href="#">Forgot Password</a>&nbsp;&nbsp;|&nbsp; <a href="register.php">Register New User</a>
-            </form>
+            </div>
+            <div class="login_form">
+                <form action="" method="post">
+                    <h3>Username :</h3>
+                    <input type="text" class="" name="username" placeholder="Username" />
+                    <h3>Password : </h3>
+                    <input type="password" class="" name="password" placeholder="Password" />
+                    <br/>
+                    <input type="submit" class="btn btn-success" value="Login" name="form_login" />
+                    <a href="#">Forgot Password</a>&nbsp;&nbsp;|&nbsp; <a href="register.php">Register New User</a>
+                </form>
+            </div>
         </div>
     </body>
-</html>
+
+    </html>
