@@ -20,6 +20,7 @@ if($_SESSION['name'] != $session_name){
     </head>
     <body>
         <div class="main_content">
+          <a href="logout.php">Logout</a><br><hr>
            <h1>Welcome to Single Login Home Page......!</h1>
         </div>
     </body>
