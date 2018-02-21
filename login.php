@@ -45,6 +45,7 @@ if(isset($_POST['form_login'])){
     <head>
         <meta charset="UTF-8">
         <title>Simple Login System :: PHP</title>
+	<link href="style.css" rel="stylesheet">
     </head>
     <body>
         <div class="form_message">
