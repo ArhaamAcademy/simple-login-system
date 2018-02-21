@@ -16,6 +16,7 @@ if($_SESSION['name'] != $session_name){
     <head>
         <meta charset="UTF-8">
         <title>Simple Login System :: PHP</title>
+	<link href="style.css" rel="stylesheet">
     </head>
     <body>
         <div class="main_content">
