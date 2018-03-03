@@ -24,9 +24,10 @@ if(isset($_POST['form_login'])){
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         if($num>0){
 
-        $session_name = "simple_login";			
-        $_SESSION['user_id'] = $result[0]['user_id'];
-        $_SESSION['name'] = $session_name;
+        $session_name = $result[0]['user_name'];
+        $_SESSION['user_name'] = $session_name;            
+        $_SESSION['full_name'] = $result[0]['full_name'];
+		
         header('location: index.php');	
 
         } else {
