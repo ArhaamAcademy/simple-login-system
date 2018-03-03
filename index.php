@@ -2,13 +2,12 @@
 ob_start();
 session_start();
 
-$session_name = "simple_login";
-if($_SESSION['name'] != $session_name){
+
+if($_SESSION['user_name'] < 0){
 	header('location: login.php');
 }
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -20,7 +19,8 @@ if($_SESSION['name'] != $session_name){
     </head>
     <body>
         <div class="main_content">
-          <a href="logout.php">Logout</a><br><hr>
+           <a href="logout.php">Logout</a><br><hr>
+	   <h3>Hi <?php echo $_SESSION['full_name']; ?></h3>
            <h1>Welcome to Single Login Home Page......!</h1>
         </div>
     </body>
