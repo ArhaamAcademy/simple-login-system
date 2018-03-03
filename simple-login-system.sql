@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
   `user_name` varchar(56) NOT NULL,
   `user_pass` varchar(56) NOT NULL,
   `user_email` varchar(100) NOT NULL,
-  `user_phone` int(11) NOT NULL,
-  `user_type` varchar(10) NOT NULL,
+  `user_phone` int(2) NOT NULL,
+  `user_type` int(2) NOT NULL,
   `timestamp` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,7 +41,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `name`, `user_name`, `user_pass`, `user_email`, `user_phone`, `user_type`, `timestamp`) VALUES
+INSERT INTO `users` (`user_id`, `full_name`, `user_name`, `user_pass`, `user_email`, `user_phone`, `user_type`, `timestamp`) VALUES
 (1, 'Abdullah', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'test@gmail.com', 0, '1', '0000-00-00 00:00:00');
 
 --
