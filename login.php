@@ -56,6 +56,9 @@ if(isset($_POST['form_login'])){
                 if(isset($error_message)){echo "<div>".$error_message."</div>";}
             ?>
             </div>
+			<div class="company_logo">
+                <img src="img/logo.png" alt="">
+            </div>
             <div class="login_form">
                 <form action="" method="post">
                     <h3>Username :</h3>
