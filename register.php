@@ -79,6 +79,9 @@ if(isset($_POST['form_login'])){
 
                 ?>
             </div>
+			<div class="company_logo">
+                <img src="img/logo.png" alt="">
+            </div>
             <div class="login_form">
                 <form action="" method="post">
                     <h3>Name :</h3>
