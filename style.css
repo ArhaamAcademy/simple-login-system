@@ -1,9 +1,9 @@
-body{
-    background-image: url(img/theme-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    min-height: 800px;
+html { 
+  background: url(img/theme-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .main_content {
 	width: 100%;
